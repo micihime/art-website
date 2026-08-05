@@ -3,6 +3,8 @@
 :root {
   /* Colors */
   --color-primary: #a88ac4; /* Use for nav bar, logo accents, and buttons. */
+  --color-primary-dark: #6b4a85; /* Use for h1 and other high-emphasis text. */
+  --color-accent-dark: color-mix(in srgb, var(--color-accent) 60%, var(--color-text)); /* Use for readable text on the accent color. */
   --color-accent: #ddce97; /* Use for buttons or hover effects. */
   --color-background: #faf7fc;
   --color-text: #2e2433;
@@ -17,6 +19,7 @@
   --spacing-small: 8px;
   --spacing-normal: 16px;
   --spacing-large: 24px;
+  --spacing-xlarge: 56px;
 
   /* Other */
   --border-radius-circle: 50%;
@@ -41,7 +44,11 @@ body {
   font-size: var(--font-size-base);
   font-family: "Montserrat", "Nunito Sans", sans-serif;
   color: var(--color-text);
-  background-color: var(--color-background);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-primary) 6%, var(--color-background)) 0%,
+    var(--color-background) 400px
+  );
   padding-bottom: var(--spacing-normal);
 }
 
@@ -55,6 +62,7 @@ h3 {
 
 h1 {
   font-size: var(--font-size-h1);
+  color: var(--color-primary-dark);
 }
 
 h2 {
@@ -68,6 +76,7 @@ h3 {
 a {
   color: var(--color-primary);
   font-weight: bold;
+  transition: color 0.2s ease;
 }
 
 a:hover {

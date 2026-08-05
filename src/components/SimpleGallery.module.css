@@ -1,15 +1,31 @@
 .gallery {
   position: relative;
   width: 100%;
-  overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: var(--spacing-normal);
+  gap: var(--spacing-large);
 }
 
 .image {
   height: 250px;
   width: auto;
+  max-width: 100%;
   flex-shrink: 0;
   display: block;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(46, 36, 51, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.image:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(46, 36, 51, 0.22);
+}
+
+@media (max-width: 600px) {
+  .image {
+    height: 200px;
+  }
 }

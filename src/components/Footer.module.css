@@ -2,12 +2,14 @@
   width: 100%;
   min-height: var(--footer-height);
   background-color: var(--color-background);
+  border-top: 1px solid color-mix(in srgb, var(--color-primary) 20%, transparent);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
   gap: var(--spacing-small);
-  padding: var(--spacing-small);
+  padding: var(--spacing-large) var(--spacing-normal);
+  margin-top: var(--spacing-xlarge);
 }
 
 .icons {
@@ -22,6 +24,7 @@
   padding: 0;
   cursor: pointer;
   color: var(--color-primary);
+  transition: color 0.2s ease;
 }
 
 .iconButton:hover {
