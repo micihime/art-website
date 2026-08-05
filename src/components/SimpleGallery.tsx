@@ -1,4 +1,4 @@
-import styles from "./Gallery.module.css";
+import styles from "./SimpleGallery.module.css";
 
 interface SimpleGalleryImage {
   src: string;
