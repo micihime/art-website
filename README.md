@@ -1,9 +1,12 @@
 # Art Website
 
-I work in watercolor, alcohol ink, and sketchbooks. This site is a journal of what I'm learning.
+A living sketchbook — practice, not perfection. This is a personal art portfolio site documenting an ongoing journey into painting and drawing: watercolor and alcohol ink experiments, sketchbook pages, half-finished studies, and the occasional success, shared as they happen rather than polished into a highlight reel.
+
+Built with React, TypeScript, and Vite.
 
 ## Features
 
+- Simple image gallery for showcasing artwork
 - Responsive design for all devices
 - Fast performance (built with React and Vite)
 - Clean, modern UI/UX

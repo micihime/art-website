@@ -1,15 +1,21 @@
 .header {
   height: var(--header-height);
-  background-color: var(--color-primary);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    color-mix(in srgb, var(--color-primary) 80%, var(--color-accent))
+  );
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px rgba(46, 36, 51, 0.18);
   display: flex;
+  align-items: center;
   padding: 0 var(--spacing-normal); /* side padding */
 }
 
 .logo {
   height: 80px;
   width: auto;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.15));
 }

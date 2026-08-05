@@ -14,9 +14,12 @@ const gallery3 = [
 function Intro() {
   return (
     <section className={styles.intro}>
-      <h1>Hi, I'm Miči.</h1>
+      <div className={styles.hero}>
+        <h1>A living sketchbook.</h1>
+        <p className={styles.subtitle}>Practice, not perfection.</p>
+      </div>
 
-      <p>
+      <p className={styles.text}>
         As a recovering perfectionist, I spent years collecting beautiful
         notebooks and art supplies that sat untouched on my shelves out of fear
         that I would "ruin" them. Now, I'm leaving the pressure behind and
@@ -26,7 +29,7 @@ function Intro() {
       {/* Featured work gallery */}
       <SimpleGallery images={gallery3} />
 
-      <p>
+      <p className={styles.text}>
         I'm learning to paint and draw. This space is a living record of that
         process: the messy sketches, the art-supply experiments, the failures,
         and the occasional successes.
